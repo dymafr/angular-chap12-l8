@@ -10,7 +10,7 @@
         placeholder="prénom nom"
       />
     </div>
-    <div class="error" *ngIf="nom.errors.required && nom.touched">
+    <div class="error" *ngIf="nom?.errors?.required && nom.touched">
       <p>Vous devez renseigner un nom</p>
     </div>
     <div formGroupName="login">
